@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  align-content: center;
+  background: linear-gradient(45deg, #190361, #BB00FF);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.hide {
+  display: none;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+main {
+  background: white;
+  width: 42.8rem;
+  filter: drop-shadow(0 2rem 5rem rgba(0, 0, 0, 0.8));
+  border-radius: .5rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  margin: 0 auto;
+}
+
+.screen1, .screen2 {
+  text-align: center;
+  width: 30rem;
+}
+
+/* Screen 1 */
+
+.screen1 h2 {
+  margin: 0 auto;
+  max-width: 25rem;
+}
+
+.screen1 p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1.4rem;
+}
+
+.screen1 button {
+  background: transparent;
+  border: none;
+  margin-top: 2rem;
+}
+
+.screen1 button:hover {
+  cursor: pointer;
+  position: relative;
+  animation: treme 0.15s infinite;
+}
+
+@keyframes treme {
+  0% { transform: rotate(0deg) translate(0, 0); }
+  25% { transform: rotate(2deg) translate(2px, -1px); }
+  50% { transform: rotate(-2deg) translate(-2px, 2px); }
+  75% { transform: rotate(1deg) translate(1px, -1px); }
+  100% { transform: rotate(0deg) translate(0, 0); }
+}
+
+/* Screen 2 */
+
+.screen2 #note {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.4rem;
+  margin-top: 1.7rem;
+  align-content: center;
+  height: 10rem;
+  background: #E4EDF1;
+  box-shadow: .2rem .2rem .2rem rgba(5, 5, 5, 0.5);
+  animation: note 1.3s;
+}
+
+.screen2 img {
+  margin-top: 6rem;
+}
+
+.screen2 button {
+  border: none;
+  border-radius: .4rem;
+  margin-top: 6rem;
+  padding: 1.6rem;
+  
+  background: #FF9500;
+  transition: background 0.1s;
+  color: white;
+
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.5rem;
+}
+
+.screen2 button:hover {
+  cursor: pointer;
+  background: #e48d15;
+}
+
+@keyframes note {
+  from {
+    transform: translateY(18rem) scale(0.2);
+  }
+  to {
+    transform: translateY(0) scale(1);
+  }
+}
